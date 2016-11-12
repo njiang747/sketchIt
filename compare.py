@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# Takes in a given query edgel set and the edgel_table and returns the top 5000 image matches
-def query_compare (query_set, edgel_table):
-    for 
 
-# Takes in 5000 images and returns the top n matches when compared to query
-def database_compare(images, query, n):
-=======
 import numpy as np
 
 
@@ -13,7 +6,7 @@ import numpy as np
 def query_compare(query_set, edgel_table, db_size):
     db_images = np.zeros(db_size)
     for edgel in query_set:
-        for i in edgel_table[edgel]:
+        for i in edgel_table[edgel[0]][edgel[1]][edgel[2]]:
             db_images[i] += 1
     x = db_images.argsort()[-5000][::-1]
     return x
@@ -31,9 +24,3 @@ def database_compare(images, query_set, n):
          
 
 
-
-
-
-    
-
->>>>>>> origin/master
