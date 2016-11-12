@@ -1,102 +1,98 @@
 import cv2
 import numpy as np
 from scipy.ndimage.filters import sobel
-import time
 
 
-# resizes an image up to max_dim
-def resize(img, max_dim):
-    r, c = img.shape
-    fac = float(max_dim) / max(r, c)
-    img2 = cv2.resize(img, None, fx=fac, fy=fac)
-    return img2
+class Preprocess:
+    # initialize a preprocess object given the size of the images
+    def __init__(self, size):
+        self.i_size = size
+        self.thresh_l = 100
+        self.thresh_h = 200
+        self.splat_radius = 4
+        self.hits = [[[set() for i in range(0, 6)] for j in range(0, self.i_size)] for k in range(0, self.i_size)]
+
+    # process an image and update the hitmap with its img id
+    def process_img(self, raw_img, img_id):
+        # resize the image
+        resize_img = self.resize(raw_img)
+        # calculate the edges of the resized image
+        canny = cv2.Canny(resize_img, self.thresh_l, self.thresh_h)
+        # calculate the edgels grid
+        edgels = self.q_grad(resize_img)
+        # update the hit map
+        e_r, e_c = canny.shape
+        off_r = (self.i_size - e_r) / 2
+        off_c = (self.i_size - e_c) / 2
+        for i, row in enumerate(canny):
+            for j, entry in enumerate(row):
+                if entry:
+                    self.splat(img_id, i + off_r, j + off_c, edgels[i, j])
+
+    # get the edgels of an img
+    def get_edgels(self, raw_img):
+        # resize the image
+        resize_img = self.resize(raw_img)
+        # calculate the edges of the resized image
+        canny = cv2.Canny(resize_img, self.thresh_l, self.thresh_h)
+        # calculate the edgels grid
+        edgels = self.q_grad(resize_img)
+        # return the list of edgels
+        e_r, e_c = canny.shape
+        off_r = (self.i_size - e_r) / 2
+        off_c = (self.i_size - e_c) / 2
+        edgel_list = []
+        for i, row in enumerate(canny):
+            for j, entry in enumerate(row):
+                if entry:
+                    edgel_list.append((i + off_r, j + off_c, edgels[i, j]))
+        return edgel_list
+
+    # return the hitmap
+    def get_hitmap(self):
+        return self.hits
+
+    # resizes an image up to max_dim
+    def resize(self, img):
+        r, c = img.shape
+        fac = float(self.i_size) / max(r, c)
+        img2 = cv2.resize(img, None, fx=fac, fy=fac)
+        return img2
+
+    # compute the grid of quantized angle bin numbers
+    def q_grad(self, img):
+        dx = sobel(img, axis=0, mode='constant')
+        dy = sobel(img, axis=1, mode='constant')
+        grad = np.arctan2(dy, dx) * 180 / np.pi
+        quantizer = np.vectorize(quantize)
+        return quantizer(grad)
+
+    # add img_id to the hitmap entries radius r around r, c, theta
+    def splat(self, img_id, r, c, theta):
+        for i in range(1, self.splat_radius + 1):
+            for j in range(1, self.splat_radius + 1 - i):
+                if r >= i:
+                    if c >= j:
+                        self.hits[r - i][c - j][theta].add(img_id)
+                    if c < self.i_size - j:
+                        self.hits[r - i][c + j][theta].add(img_id)
+                if r < self.i_size - i:
+                    if c >= j:
+                        self.hits[r + i][c - j][theta].add(img_id)
+                    if c < self.i_size - j:
+                        self.hits[r + i][c + j][theta].add(img_id)
+            if r >= i:
+                self.hits[r - i][c][theta].add(img_id)
+            if r < self.i_size - i:
+                self.hits[r + i][c][theta].add(img_id)
+            if c >= i:
+                self.hits[r][c - i][theta].add(img_id)
+            if c < self.i_size - i:
+                self.hits[r][c + 1][theta].add(img_id)
+            self.hits[r][c][theta].add(img_id)
 
 
+# quantize the angle (-pi,pi) into one of 5 bins
 def quantize(angle):
     angle2 = (angle + 15) % 180
     return int(angle2) / 30
-
-
-def q_grad(img):
-    dx = sobel(img, axis=0, mode='constant')
-    dy = sobel(img, axis=1, mode='constant')
-    grad = np.arctan2(dy, dx) * 180 / np.pi
-    quantizer = np.vectorize(quantize)
-    return quantizer(grad)
-
-
-def splat(img_id, r, c, theta, radius):
-    for i in range(1, radius + 1):
-        for j in range(1, radius + 1 - i):
-            if r >= i:
-                if c >= j:
-                    hits[r-i][c-j][theta].append(img_id)
-                if c < i_size-j:
-                    hits[r-i][c+j][theta].append(img_id)
-            if r < i_size-i:
-                if c >= j:
-                    hits[r+i][c-j][theta].append(img_id)
-                if c < i_size-j:
-                    hits[r+i][c+j][theta].append(img_id)
-        if r >= i:
-            hits[r - i][c][theta].append(img_id)
-        if r < i_size-i:
-            hits[r + i][c][theta].append(img_id)
-        if c >= i:
-            hits[r][c - i][theta].append(img_id)
-        if c < i_size-i:
-            hits[r][c + 1][theta].append(img_id)
-        hits[r][c][theta].append(img_id)
-
-
-# constants
-i_size = 200
-thresh_l = 100
-thresh_h = 200
-splat_radius = 4
-hits = [[[[] for i in range(0,6)] for j in range(0,i_size)] for k in range(0,i_size)]
-
-start = time.time()
-
-# open the image
-raw_img = cv2.imread('butterfly.jpg', 0)
-resize_img = resize(raw_img, i_size)
-
-end = time.time()
-print end - start
-start = end
-
-# calculate the edges of the resized image
-canny = cv2.Canny(resize_img, thresh_l, thresh_h)
-
-end = time.time()
-print end - start
-start = end
-
-edgels = q_grad(resize_img)
-e_r, e_c = canny.shape
-off_r = (i_size - e_r) / 2
-off_c = (i_size - e_c) / 2
-
-end = time.time()
-print end - start
-start = end
-
-for i, row in enumerate(canny):
-    for j, entry in enumerate(row):
-        if entry:
-            splat(0, i + off_r, j + off_c, edgels[i, j], splat_radius)
-
-end = time.time()
-print end - start
-start = end
-
-# # fill until 200x200 img
-# out_img = np.zeros((i_size,i_size))
-# e_r,e_c = edges.shape
-# out_img[(i_size-e_r)/2:(i_size+e_r)/2,(i_size-e_c)/2:(i_size+e_c)/2] = edges
-#
-# # show img
-# plt.imshow(out_img,cmap = 'gray')
-#
-# plt.show()
