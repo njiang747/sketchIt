@@ -39,9 +39,5 @@ class Debug:
         plt.imshow(test_img,cmap='gray')
 
 
-deb = Debug('anchor.jpg','101_ObjectCategories/anchor/image_0005.jpg')
-deb.show()
-deb = Debug('anchor.jpg','101_ObjectCategories/airplanes/image_0038.jpg')
-deb.show()
-deb = Debug('circle2.jpg','Images/moon/image33.jpg')
+deb = Debug('sketches/star.jpg','Images/night sky/image20.jpg')
 deb.show()
