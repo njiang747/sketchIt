@@ -10,7 +10,8 @@ def query_compare(query_set, edgel_table, db_size):
         for i in edgel_table[edgel[0]][edgel[1]][edgel[2]]:
             db_images[i] += 1
     x = db_images.argsort()[-50:][::-1]
-    return x
+    y = [(i,db_images[i]) for i in x]
+    return y
 
 def database_compare(images, query_img, n, i_size):
     pre = preprocess.Preprocess(i_size)
