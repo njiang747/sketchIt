@@ -17,7 +17,7 @@ def database_compare(images, query_img, n, i_size):
     pre = preprocess.Preprocess(i_size)
     pre.process_img(query_img, 0)
     edgel_table = pre.get_hitmap()
-    image_scores = np.zeros(len(images))
+    image_scores = np.asarray([y[1] for y in images])
     for i in range(0,len(images)):
         edgels = pre.get_edgels(images[i])
         for edgel in edgels:
