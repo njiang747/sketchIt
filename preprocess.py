@@ -1,4 +1,4 @@
-import cv2
+:import cv2
 import numpy as np
 from scipy.ndimage.filters import sobel
 
