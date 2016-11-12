@@ -9,7 +9,7 @@ def query_compare(query_set, edgel_table, hitcounts):
             db_images[i] += 1
     np_hitcounts = np.array(hitcounts)
     db_images = np.divide(db_images, np_hitcounts)
-    x = db_images.argsort()[-50:][::-1]
+    x = db_images.argsort()[-100:][::-1]
     y = [(i,db_images[i]) for i in x]
     return y
 

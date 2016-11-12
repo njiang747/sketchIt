@@ -1,6 +1,8 @@
 :import cv2
 import numpy as np
 from scipy.ndimage.filters import sobel
+from scipy.ndimage.filters import convolve1d as conv1d
+import math
 
 
 class Preprocess:
@@ -8,11 +10,13 @@ class Preprocess:
     def __init__(self, size, n_angles):
         self.i_size = size
         self.angles = n_angles
-        self.thresh_l = 100
-        self.thresh_h = 200
+        self.thresh_l = 200
+        self.thresh_h = 300
         self.splat_radius = 4
         self.hitcounts = []
         self.hits = [[[set() for i in range(0, n_angles)] for j in range(0, self.i_size)] for k in range(0, self.i_size)]
+        self.ggrad1d = gauss_grad(3)
+        self.gauss1d = gauss(3)
 
     # process an image and update the hitmap with its img id
     def process_img(self, raw_img):
@@ -53,6 +57,8 @@ class Preprocess:
                     edgel_list.append((i + off_r, j + off_c, edgels[i, j]))
         return edgel_list
 
+    def auto_threshold(
+
     # return the hitmap
     def get_hitmap(self):
         return self.hits
@@ -70,9 +76,13 @@ class Preprocess:
 
     # compute the grid of quantized angle bin numbers
     def q_grad(self, img):
-        img2 = cv2.GaussianBlur(img, (5, 5), 3)
-        dx = sobel(img2, axis=0, mode='constant')
-        dy = sobel(img2, axis=1, mode='constant')
+        # img2 = cv2.GaussianBlur(img, (5, 5), 3)
+        # dx = sobel(img2, axis=0, mode='constant')
+        # dy = sobel(img2, axis=1, mode='constant')
+        dy = conv1d(img/255.0, self.gauss1d, 1)
+        dx = conv1d(img/255.0, self.gauss1d, 0)
+        dy = conv1d(dy, self.ggrad1d, 0)
+        dx = conv1d(dx, self.ggrad1d, 1)
         grad = np.arctan2(dy, dx) * 180 / np.pi
         quantizer = np.vectorize(self.quantize)
         return quantizer(grad)
@@ -105,3 +115,16 @@ class Preprocess:
     def quantize(self, angle):
         angle2 = (angle + 90/self.angles) % 180
         return int(angle2 / (180.0 / self.angles))
+
+def gauss(sig):
+    kernel_rad = 3*math.ceil(sig)
+    kernel_size = 2*kernel_rad + 1
+    kernel = np.arange(kernel_size) - kernel_rad
+    return np.divide(np.exp(-np.multiply(kernel,kernel)/(2*sig*sig)),(sig*np.sqrt(2*np.pi)))
+
+
+def gauss_grad(sig):
+    kernel_rad = 3*math.ceil(sig)
+    kernel_size = 2*kernel_rad + 1
+    kernel = np.arange(kernel_size) - kernel_rad
+    return np.divide(np.multiply(-kernel,np.exp(-np.multiply(kernel,kernel)/(2*sig*sig))),(sig*sig*sig*np.sqrt(2*np.pi)))

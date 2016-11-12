@@ -7,15 +7,15 @@ class Debug:
     def __init__(self, fname1, fname2):
         self.img_size = 100
         self.n_angles = 4
-        pre = preprocess.Preprocess(self.img_size,self.n_angles)
+        self.pre = preprocess.Preprocess(self.img_size,self.n_angles)
         self.test_img = np.zeros((self.n_angles,self.img_size,self.img_size))
 
         query_img = cv2.imread(fname1, 0)
         database_img = cv2.imread(fname2, 0)
 
-        self.query_set = pre.get_edgels(query_img)
-        pre.process_img(database_img)
-        self.hitmap = pre.get_hitmap()
+        self.query_set = self.pre.get_edgels(query_img)
+        self.pre.process_img(database_img)
+        self.hitmap = self.pre.get_hitmap()
 
         for i,r in enumerate(self.hitmap):
             for j,c in enumerate(r):
@@ -43,3 +43,10 @@ deb = Debug('circle.jpg','Images/moon/image7.jpg')
 deb.show()
 deb = Debug('circle.jpg','Images/moon/image38.jpg')
 deb.show()
+<<<<<<< HEAD
+=======
+deb = Debug('anchor.jpg','101_ObjectCategories/airplanes/image_0038.jpg')
+deb.show()
+deb = Debug('circle2.jpg','Images/moon/image33.jpg')
+deb.show()
+>>>>>>> 6901714a3a1ce38b02200503a45a0d75c6a40932
