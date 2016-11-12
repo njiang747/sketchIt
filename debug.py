@@ -38,15 +38,5 @@ class Debug:
             test_img[i,j] = 255
         plt.imshow(test_img,cmap='gray')
 
-
-deb = Debug('circle.jpg','Images/moon/image7.jpg')
+deb = Debug('sketches/star.jpg','Images/night sky/image20.jpg')
 deb.show()
-deb = Debug('circle.jpg','Images/moon/image38.jpg')
-deb.show()
-<<<<<<< HEAD
-=======
-deb = Debug('anchor.jpg','101_ObjectCategories/airplanes/image_0038.jpg')
-deb.show()
-deb = Debug('circle2.jpg','Images/moon/image33.jpg')
-deb.show()
->>>>>>> 6901714a3a1ce38b02200503a45a0d75c6a40932
