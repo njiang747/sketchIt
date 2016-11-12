@@ -24,7 +24,7 @@ class Search:
     def top_n_mult(self, img, n):
         num_imgs = 100
         query_set = self.pre.get_edgels(img)
-        idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_hitcounts(), num_imgs)
+        idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(), num_imgs)
         top_filenames = map(lambda x: self.lookup[x], idxs)
         top_imgs = map(lambda x: cv2.imread(x, 0), top_filenames)
         database_scores = compare.database_compare(top_imgs, img, self.img_size, self.n_angles)
@@ -36,7 +36,7 @@ class Search:
     def top_n_add(self, img, n):
         num_imgs = 100
         query_set = self.pre.get_edgels(img)
-        idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_hitcounts(), num_imgs)
+        idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(), num_imgs)
         top_filenames = map(lambda x: self.lookup[x], idxs)
         top_imgs = map(lambda x: cv2.imread(x, 0), top_filenames)
         database_scores = compare.database_compare(top_imgs, img, self.img_size, self.n_angles)
