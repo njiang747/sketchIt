@@ -1,1 +1,0 @@
-/images/cat/image0.jpg,/images/cat/image120.jpg,/images/money/image102.jpg,/images/pets/image75.jpg,

@@ -1,1 +1,0 @@
-/images/cat/image103.jpg,/images/mountain/image58.jpg,/images/mountain/image60.jpg,/images/mountain/image76.jpg,/images/mountain/image109.jpg,/images/mountain/image115.jpg,/images/mountain/image117.jpg,/images/mountain/image148.jpg,/images/pyramid/image9.jpg,/images/statue/image77.jpg,/images/landscape/image73.jpg,

@@ -1,1 +1,0 @@
-/images/star/image3.jpg,/images/boat/image78.jpg,/images/boat/image108.jpg,/images/car/image12.jpg,/images/car/image47.jpg,/images/car/image136.jpg,/images/flower/image115.jpg,/images/bicycle/image67.jpg,/images/pikachu/image128.jpg,/images/banana/image148.jpg,/images/ball/image72.jpg,

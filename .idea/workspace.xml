@@ -2,10 +2,298 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d074abc7-8ae3-49ca-88e7-bbda37df3d6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/African daisy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/abstract.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/accessory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/air.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/aircraft.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/alcohol.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/animal.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/apple.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/assorted.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/athletic game.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/background.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/ball.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/balloon.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/banana.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/baseball.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/basket.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/basketball.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/beach.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bear.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bedclothes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/beverage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bicycle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bird.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/birthday.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/black.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/blender.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/blue.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/boat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/book.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bottle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bowl.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/box.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/branch.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/brass.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bread.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/brick.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bridge.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/brown.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bubble.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/buffalo wing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/building.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/bunch.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/businesscard.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cabinet.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cake.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/calendula.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/candle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cannonball.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/car.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/carrot.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/case.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/chair.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/chicken.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/chocolate.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cineraria.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/circuit.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/city.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/clipart.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/clock.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/clothing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cloudy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/coffee.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/colored.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/colorful.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/columbine.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/computer.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/conifer.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/container.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cosmetic.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/covered.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/crater.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cricket.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cup.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/cut.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/dandelion green.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/desk.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/dessert.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/different.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/dirt.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/dish.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/display.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/docked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/dog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/doll.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/dome.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/domestic cat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/donut.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/doughnut.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/drinking water.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/echinoderm.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/edelweiss.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/electronics.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/eyes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/factory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/fence.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/field.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/flamingo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/flock.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/floor.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/flower.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/food.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/forget-me-not.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/fork.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/fries.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/fruit.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/furniture.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/gallery.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/gallinaceous bird.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/gear.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/giraffe.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/glass.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/golf.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/government building.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/grass.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/gray.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/grazing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/green.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/grey.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/grill.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/ground.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/guitar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/gun.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/hairpiece.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/hay.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/hill.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/holding.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/horse.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/hot pepper.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/hot.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/house.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/ice.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/indoor.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/insect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/invertebrate.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/keyboard.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/lagomorph.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/lake.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/laptop.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/large.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/laying.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/leaning.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/leather.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/light.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/lined.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/living.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/looking.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/luggage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/mammal.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/man.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/mandolin.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/manul.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/many.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/map.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/marigold.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/metalware.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/microscope.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/military vehicle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/mollusk.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/monitor.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/motorcycle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/mountain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/mouse.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/music.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/nature.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/necktie.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/newspaper.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/nigella.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/night sky.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/night.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/object.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/ocean.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/old.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/orange.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/orchid.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/outdoor object.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/outdoor.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/parked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/parrot.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pastry.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pen.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pencil.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pepper.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/perched.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/person.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/piece.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pink.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pinwheel.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/plain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/plane.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/plant.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/plate.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pool ball.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/pool table.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/poolroom.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/poppy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/posing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/power shovel.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/queen.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rack.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/red.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/residential.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rice.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/river.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/road.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rock.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rocky.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rodent.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/room.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rose.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/rug.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sailing vessel.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sandglass.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sandwich.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/scene.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/screenshot.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sculpture.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/seat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/shaker.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sheep.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/ship.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/shoji.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sidewalk.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sign.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sitting.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/skiing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sky.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/slice.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/smiling.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/smoke.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/snack food.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/snow.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/soccer.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sofa.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/soup.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sport.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/squash.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/standing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/star.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/starfish.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/stationary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/stone.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/street.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/stuffed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/suit.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/suitcase.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sun.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sunset.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/sweet.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/table.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/tableware.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/teddy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/tennis.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/thistle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/toiletry.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/tool.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/tower.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/toy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/transport.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/tree.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/truck.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/umbrella.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/valley.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/variety.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/vegetable.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/verbena.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/wall.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/watch.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/water.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/watercraft.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/way.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/weapon.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/wearing.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/wedding.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/white.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/whiteboard.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/wildcat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/window.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/wine.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/woman.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/wooden.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/worm.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/writing implement.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/yellow.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tags/young.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.jpg" afterPath="$PROJECT_DIR$/temp.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.py" afterPath="$PROJECT_DIR$/preprocess.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <ignored path="sketchIt.iws" />
@@ -41,8 +329,18 @@
       <file leaf-file-name="compare.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -51,8 +349,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -63,8 +361,8 @@
       <file leaf-file-name="simple_draw.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple_draw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="663">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -83,8 +381,8 @@
         <option value="$PROJECT_DIR$/compare.py" />
         <option value="$PROJECT_DIR$/search.py" />
         <option value="$PROJECT_DIR$/simple_draw.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -138,6 +436,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchIt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketchIt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sketches" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -149,12 +461,12 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nicholas\Documents\sketchIt\sketches" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Nicholas\Documents\sketchIt\sketches" />
       <recent name="C:\Users\Nicholas\Documents\sketchIt" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicholas\Documents\sketchIt\sketches" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test">
@@ -524,30 +836,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_draw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -556,10 +844,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simple_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="680">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

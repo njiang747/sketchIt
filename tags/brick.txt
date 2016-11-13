@@ -1,1 +1,0 @@
-/images/house/image5.jpg,/images/statue/image21.jpg,/images/statue/image113.jpg,/images/statue/image114.jpg,/images/bicycle/image71.jpg,/images/bicycle/image123.jpg,/images/bicycle/image130.jpg,
