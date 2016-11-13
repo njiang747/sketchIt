@@ -1,6 +1,6 @@
 import pygame, random
 
-screen = pygame.display.set_mode((800,600))
+screen = pygame.display.set_mode((300,300))
 
 draw_on = False
 last_pos = (0, 0)
