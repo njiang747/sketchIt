@@ -38,5 +38,6 @@ class Debug:
             test_img[i,j] = 255
         plt.imshow(test_img,cmap='gray')
 
-deb = Debug('sketches/person.jpg','images/cat/image35.jpg')
+
+deb = Debug('sketches/banana.jpg','images/banana/image93.jpg')
 deb.show()
