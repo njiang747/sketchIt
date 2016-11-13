@@ -2,13 +2,15 @@ import cv2
 import preprocess
 import compare
 import os
+import database
 
 
 class Search:
-    def __init__(self, directory):
-        self.img_size = 100
-        self.n_angles = 4
+    def __init__(self, directory, load_file=None):
+        self.img_size = 200
+        self.n_angles = 6
         direc = directory
+
         self.pre = preprocess.Preprocess(self.img_size, self.n_angles)
         self.lookup = []
 
@@ -16,10 +18,14 @@ class Search:
             for f in files:
                 filename = os.path.join(subdir, f)
                 if filename[-3:] == 'jpg':
-                    raw_img = cv2.imread(filename, 0)
-                    self.pre.process_img(raw_img)
+                    if not load_file:
+                        raw_img = cv2.imread(filename, 0)
+                        self.pre.process_img(raw_img)
                     self.lookup.append(filename)
                     print '%i:\t%s' % (len(self.lookup), filename)
+        if load_file:
+            edgel_counts = database.load_data(self.pre.hits, 'pre_state.csv')
+            self.pre.set_edgel_counts(edgel_counts)
 
     def top_n_mult(self, img, n):
         num_imgs = 100
