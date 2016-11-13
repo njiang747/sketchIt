@@ -1,13 +1,9 @@
 import cv2
 import search
-import time
 import database
 from matplotlib import pyplot as plt
-import pygame, random
-
-start = time.time()
-
-searcher = search.Search('images', 'save_state.csv')
+import pygame
+import os
 
 def save_hits():
     database.save_data(searcher.pre.get_hitmap(), searcher.pre.get_edgel_counts(), 'save_state.csv')
@@ -21,6 +17,12 @@ def top_hits(filename):
     for i,match in enumerate(top[:5]):
         plt.subplot(2,3,i+2), plt.imshow(cv2.cvtColor(cv2.imread(match,1), cv2.COLOR_BGR2RGB)), plt.axis('off')
     plt.show()
+
+if os.path.isfile('save_state.csv'):
+    searcher = search.Search('images', 'save_state.csv')
+else:
+    searcher = search.Search('images')
+    save_hits()
 
 while True:
     screen = pygame.display.set_mode((800, 800))
@@ -67,3 +69,4 @@ while True:
     pygame.quit()
 
     top_hits('temp.jpg')
+    cv2.waitKey(0)
