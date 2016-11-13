@@ -10,7 +10,7 @@ class Preprocess:
         self.angles = n_angles
         self.thresh_l = 200
         self.thresh_h = 300
-        self.splat_radius = 4
+        self.splat_radius = 2
         self.edgel_counts = []
         self.hits = [[[set() for i in range(0, n_angles)] for j in range(0, self.i_size)] for k in
                      range(0, self.i_size)]

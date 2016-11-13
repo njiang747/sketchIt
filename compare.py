@@ -1,13 +1,26 @@
 import numpy as np
 import preprocess
-
+import csv
+import os.path
 
 # Takes in a query edgel set and returns the top n matches (idx,score)
-def query_compare(query_set, edgel_table, edgel_counts, n):
+def query_compare(query_set, edgel_table, edgel_counts, n, tag=None, lookup=None):
+    fileExists = False
+    if tag!=None:
+        filePath = "tags\\" + tag + ".csv"
+        if os.path.isfile(filePath):
+            fileExists = True
+            f = open(filePath, 'rb')
+            valid_images = list(csv.reader(f))
     hit_counts = np.zeros(len(edgel_counts))
     for edgel in query_set:
         for i in edgel_table[edgel[0]][edgel[1]][edgel[2]]:
-            hit_counts[i] += 1
+            if fileExists:
+                curr_file = "/" + lookup[i].replace('\\', '/')
+                if valid_images[0].__contains__(curr_file):
+                    hit_counts[i] += 1
+            else:
+                hit_counts[i] += 1
     np_edgel_counts = np.array(edgel_counts)
     hit_counts = np.divide(hit_counts, np_edgel_counts)
     x = hit_counts.argsort()[-n:][::-1]

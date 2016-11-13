@@ -6,8 +6,9 @@ import database
 
 
 class Search:
+
     def __init__(self, directory, load_file=None):
-        self.img_size = 200
+        self.img_size = 100
         self.n_angles = 6
         direc = directory
 
@@ -24,13 +25,18 @@ class Search:
                     self.lookup.append(filename)
                     print '%i:\t%s' % (len(self.lookup), filename)
         if load_file:
-            edgel_counts = database.load_data(self.pre.hits, 'pre_state.csv')
+            edgel_counts = database.load_data(self.pre.hits, load_file)
             self.pre.set_edgel_counts(edgel_counts)
 
-    def top_n_mult(self, img, n):
+    def top_n_mult(self, img, n, tag=None):
         num_imgs = 100
         query_set = self.pre.get_edgels(img)
-        idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(), num_imgs)
+        if (tag == None):
+            idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(),
+                                                       num_imgs)
+        else:
+            idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(),
+                                                       num_imgs, tag, self.lookup)
         top_filenames = map(lambda x: self.lookup[x], idxs)
         top_imgs = map(lambda x: cv2.imread(x, 0), top_filenames)
         database_scores = compare.database_compare(top_imgs, img, self.img_size, self.n_angles)
@@ -39,10 +45,14 @@ class Search:
         top_fileidxs = map(lambda x: x[0], sorted(top_matches,key=lambda x: x[1],reverse=True))
         return map(lambda x: self.lookup[x], top_fileidxs[0:n])
 
-    def top_n_add(self, img, n):
+    def top_n_add(self, img, n, tag=None):
         num_imgs = 100
         query_set = self.pre.get_edgels(img)
-        idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(), num_imgs)
+        if(tag == None):
+            idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(),
+                                                       num_imgs)
+        else:
+            idxs, query_scores = compare.query_compare(query_set, self.pre.get_hitmap(), self.pre.get_edgel_counts(), num_imgs, tag, self.lookup)
         top_filenames = map(lambda x: self.lookup[x], idxs)
         top_imgs = map(lambda x: cv2.imread(x, 0), top_filenames)
         database_scores = compare.database_compare(top_imgs, img, self.img_size, self.n_angles)
