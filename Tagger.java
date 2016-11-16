@@ -60,7 +60,7 @@ public class Tagger {
 					}
 					try {
 						// Append our image to the proper tag file
-						File f = new File(tag + ".txt");
+						File f = new File(tag + ".csv");
 						PrintWriter out = new PrintWriter(new FileWriter(f, true));
 						out.append(name);
 						out.append(",");
