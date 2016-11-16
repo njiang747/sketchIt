@@ -1,3 +1,5 @@
 images
 sketches
-save_state.csv
+*.csv
+*.pyc
+.idea
