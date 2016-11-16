@@ -20,7 +20,8 @@ public class Scraper {
 	public static void main(String[] args) throws Exception {
 
 		HttpClient httpclient = HttpClients.createDefault();
-		// done: "cat", "cake", "house", "heart", "moon", "chair", "tree",
+		// Here lie the queries we have already included in our database: "cat",
+		// "cake", "house", "heart", "moon", "chair", "tree",
 		// "eiffel tower", "mountain", "computer", "mouese", "bag", "headshot",
 		// "pyramid", "star", "guitar", "boat", "car", "dog", "flower",
 		// "statue", "pencil",

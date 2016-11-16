@@ -20,7 +20,6 @@ public class Tagger {
 	HttpClient httpclient = HttpClients.createDefault();
 	HttpPost request;
 
-	// New Tagger object
 	public Tagger() {
 		try {
 			URIBuilder builder = new URIBuilder("https://api.projectoxford.ai/vision/v1.0/analyze");
@@ -47,11 +46,10 @@ public class Tagger {
 			HttpEntity entity = response.getEntity();
 
 			if (entity != null) {
+				// Parse information out of the json we get back
 				String json = EntityUtils.toString(entity);
-				System.out.println(json);
 				JSONObject obj = new JSONObject(json);
 				JSONArray tagArray = obj.getJSONArray("tags");
-				// System.out.println(valueArray);
 				for (int i = 0; i < tagArray.length(); i++) {
 					JSONObject valueObject = tagArray.getJSONObject(i);
 					String tag = valueObject.getString("name");
@@ -61,6 +59,7 @@ public class Tagger {
 						break;
 					}
 					try {
+						// Append our image to the proper tag file
 						File f = new File(tag + ".txt");
 						PrintWriter out = new PrintWriter(new FileWriter(f, true));
 						out.append(name);
