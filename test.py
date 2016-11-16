@@ -26,6 +26,7 @@ else:
 
 
 pygame.init()
+pygame.display.set_caption('SketchIt')
 screen = pygame.display.set_mode((800, 800))
 
 draw_on = False
