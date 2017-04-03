@@ -9,11 +9,12 @@ SketchIt allows you to draw an image and will return to you pictures that match 
 ## How we built it
 We built the entire application almost from scratch. The main logic is written in Python and the only external library we use is OpenCV to generate the Canny Edge representation of images. The basic logic is as follows:
 
-Given an input sketch S, we want to match it to one of the images stored in our database, D.
-We pre-process "hit maps" of each image based on their Canny Edge representation. The map essentially allows users a margin of error so that as long as their sketch falls within the map, it is still considered a match.
-We then look at our database of images and return the images with the most matches
-In order to further strengthen the matching we then do a reverse comparison from D -> S, in which we generate a hitmap based off the input sketch S and try to map the images from the previous step to S's hit map.
-Users can supply an optional "tag" query to aid their sketch. For instance, if the user drew a chicken, they can also supply the tag "bird" to narrow down the searching space
+* Given an input sketch S, we want to match it to one of the images stored in our database, D.
+* We pre-process "hit maps" of each image based on their Canny Edge representation. The map essentially allows users a margin of error so that as long as their sketch falls within the map, it is still considered a match.
+* We then look at our database of images and return the images with the most matches
+* In order to further strengthen the matching we then do a reverse comparison from D -> S, in which we generate a hitmap based off the input sketch S and try to map the images from the previous step to S's hit map.
+* Users can supply an optional "tag" query to aid their sketch. For instance, if the user drew a chicken, they can also supply the tag "bird" to narrow down the searching space.
+
 Our database was built by scraping images from Bing using the Bing image search API. These images were then classified with tags using Microsoft Cognative Services' Vision API.
 
 ## Challenges we ran into
